@@ -1,0 +1,287 @@
+//Navbar alligment with brand
+.navbar-nav {
+    li {
+        margin-top: 5px;
+    }
+}
+//Secondary nav on the right
+.nav-right {
+    float: right;
+    li {
+        margin-top: 5px;
+    }
+    button {
+        margin-top: 5px;
+        margin-left: 16px;
+        border-radius: 0px;
+        border-width: 2px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;        
+    }
+}
+
+#welcome {
+	height: 300px;
+    box-sizing:border-box;
+	background-color: #191919;
+	color: #fff;
+	position: relative;
+	.welcome-message {
+		background-color: hsla(0,0,1%,0.4); // translucent overlay
+		//position: absolute;
+		top: 0;
+		left: 0;
+		right:0;
+		bottom: 0;
+		padding: 20px 40px;
+		strong {
+			font-size: 1.2em;
+			text-transform: uppercase;
+		}
+	}
+	@media (max-width: 900px) { //Compiler error with @screen-sm-max, check values
+		background: #191919 url('../img/handy.jpeg') center center no-repeat; //Set 906x600 image
+	}
+	@media (min-width: 600px) { //Compiler error with @screen-sm-max, check values
+		height: 480px;
+		.container {
+			position: relative;
+            top: 170px;
+		}
+		.welcome-message {
+			right: 20%;
+			bottom: auto;
+			strong {
+				display: block;
+			}
+		}
+	}
+	@media (min-width: 600px) { //Compiler error with @screen-sm-min, check values
+		height: 540px;
+		background: #191919 url('../img/handy.jpeg') center center no-repeat; //Set 1600x1060 image
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  .welcome-message {
+	  	right: 50%;
+		}
+	}
+}
+
+#scroll-module {
+    //position: -webkit-sticky;
+    top: 10px;
+    overflow-y: scroll;
+    height: 200px;
+}
+
+#myScrollspy {
+    position: sticky;
+    top: 10px;
+}
+
+#section1 {
+    height: 550px;
+}
+
+.module0 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    background-color: #FFF; 
+}
+
+.module1 {
+    background-color: rgb(248, 248, 249);
+}
+
+#electrical-staff {
+  background: url('../img/electrical_staff.jpeg') no-repeat center center fixed; 
+  display: table;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;   
+}
+
+#handy-dad {
+  background: url('../img/handy.jpeg') no-repeat center center fixed; 
+  display: table;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;   
+}
+
+#professional {
+  background: url('../img/professional.jpeg') no-repeat center center fixed; 
+  display: table;
+  height: 500px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;   
+}
+
+.module3 {
+    background-color: rgb(248, 248, 249);
+    .img-fluid {
+        max-height: 500px;
+        max-width: 624px;
+    }
+}
+
+.module31 {
+    padding-top: 50px;
+    button {
+        margin-top: 5px;
+        margin-left: 16px;
+        border-radius: 0px;
+        border-width: 2px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;        
+    }
+}
+
+.module4{
+    padding-left: none;
+    .img-fluid {
+        max-height: 500px;
+        max-width: 624px;
+    }
+    button {
+        color: rgb(152, 0, 0);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.module41 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.module42 {
+    padding-top: 50px;
+}
+.module5{
+    background-color: rgb(248, 248, 249);
+    .img-fluid {
+        max-height: 500px;
+        max-width: 624px;
+    }
+    button {
+        color: rgb(152, 0, 0);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.module51 {
+    padding-top: 50px;
+}
+
+.search-map {
+    padding-left: none;
+}
+.module6{
+    height: 500px;
+    padding-top: 200px;
+    position: absolute;
+    //height: 500px;            
+	//padding: 20px;                	
+    z-index: 1;
+    background-color: rgba(245,245,245,0.7);
+}
+
+#map-container { 
+    height: 500px;
+    padding: 20px;
+    //margin-bottom: 40px;
+    z-index: -1;
+}
+
+#footer {
+        background-color: rgb(47, 50, 57);
+        font-size: 12px;
+        line-height: 18px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    
+    a {
+		color: #727880; //Edited by DM Nov'14, original value: @navbar-inverse-color
+		&:focus,
+		&:hover,
+		&:active {
+		//	color: @navbar-inverse-link-hover-color;
+		}
+    }
+        
+    h4 {
+        font-size: 120%;
+		margin-bottom: 4px;
+		text-transform: uppercase;
+		color: #FFF;
+    }
+    ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		color: #727880;
+	}
+    .footer-brand {
+		padding-left:0;
+		height: 20px; 
+		margin-top: 6px;
+		    >img {
+		        vertical-align: middle;
+		        border:0;
+		        background: transparent;
+		    }
+	}
+    .copyright {
+        border-top: 1px solid #43474e;
+        padding-top: 30px;
+        pading-bottom: 10px;
+        margin-top: 25px;
+        }
+    .footer-legal {
+        color: #727880;
+        font-size: 13px;
+    }
+    
+    	ul.social {
+		margin: -25px; // Edited by DM Nov'14, original value: 20px
+		padding: 24px 0 0;
+		width: 100%;
+		text-align: center;
+		> li {
+				display: inline-block;
+			> a {
+				display: inline-block;
+				font-size: 18px;
+				line-height: 30px;
+                width: 30px;
+		        border-radius: 36px;
+				background-color: #727880; // Edited by DM Nov'14, original value (grey light): darken(@navbar-inverse-bg, 27%)
+				color: #2f3239; //Edited by DM Nov'14, original value: darken(@navbar-inverse-color, 18%)
+				margin: 0 3px 3px 0;
+				//&:hover {
+				//	text-decoration: none;
+				//	background-color: darken(@navbar-inverse-bg, 32%); // @link-hover-color;
+				//	color: @navbar-inverse-link-hover-color; // added
+				//}
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+body {
+    .search-pro {
+        background-color: rgb(233, 233, 233);
+    }
+}//Review body background changes in all pages..... 
+
+.pro {
+    position: relative;
+    height: 400px;
+    margin-top: 80px;
+  }
+
+#filter-module{ 
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+#main-module {
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.list-inline {
+    .btn {
+        color:rgb(65, 65, 65);
+    }
+    .btn-filter {
+    margin-left: 0px;
+    color: #868686;
+    background-color: rgb(233, 233, 233);
+        i {
+        color: #262626;
+        }      
+    }
+    .btn-remove {
+    margin-left: 1px;
+    border-left: 1px solid transparent;
+    background-color: rgb(212, 212, 212);
+    color: #262626;
+    }
+}
+
+.result {
+    padding-top: 10px;
+}
+
+.search-form {
+    padding-top: 10px;
+}
+
+.profiles {
+    padding-top: 20px;
+}
+
+.user {
+    color: #868686;
+}
+.profile-overview {
+    align-content: middle;
+    text-align: justify;
+}
+.fa-plug {
+    color: lightgreen;
+}

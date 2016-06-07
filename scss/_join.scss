@@ -1,0 +1,103 @@
+#layout {
+	min-height: 450px;
+    box-sizing:border-box;
+	background-color: #191919;
+	color: #fff;
+    display: inline-block;
+	position: relative;
+    
+	@media (max-width: 900px) { //Compiler error with @screen-sm-max, check values
+		background: #191919 url('../img/professional.jpeg') center center no-repeat; //Set 906x600 image
+	}
+	@media (min-width: 600px) { //Compiler error with @screen-sm-max, check values
+		height: 480px;
+		.container {
+			position:absolute;
+            top: 50px;
+            padding-top: 40px;
+		}
+	}
+	@media (min-width: 600px) { //Compiler error with @screen-sm-min, check values
+		height: 650px;
+		background: #191919 url('../img/professional.jpeg') center center no-repeat; //Set 1600x1060 image
+		-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	}
+    .container {
+        max-width: 350px;
+        background-color: rgb(242, 242, 244);
+    }
+}
+
+.layout1 {
+    padding-top: 20px;
+    h1 {
+        font-size: 50px;
+        font-weight: 400;
+        margin-bottom: 48px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    p {
+        font-weight: 400;
+        line-height: 24px;
+        text-align: justify;
+    }
+}
+
+.account {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(157, 157, 163);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 14px;
+    margin-bottom: 24px;
+    margin-top: 12px;
+}
+
+#nameInput {
+    width: 150px;
+}
+
+#surenameInput {
+    width: 150px;
+}
+
+.legal {
+    color: rgb(157, 157, 163);
+    font-size: 10px;
+    text-align: justify;
+    margin-top: 24px;
+        }
+
+.legal2 {
+    color: rgb(31, 186, 214);
+    font-size: 10px;
+        }
+
+#layout2 {
+    text-align: justify;
+    color:  rgb(34, 34, 49);
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 24px;    
+    }
+    p {
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+#layout3 {
+    height: 200px;
+}
+
+.layout31 {
+    align-content: center;
+}
+
