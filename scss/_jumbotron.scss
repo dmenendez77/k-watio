@@ -1,0 +1,24 @@
+.jumbotron {
+  padding: $jumbotron-padding ($jumbotron-padding / 2);
+  //margin-bottom: $jumbotron-padding;
+  //Remove margin
+  margin-bottom: 0;
+  //background-color: $jumbotron-bg;
+  //Add background color  
+  background-color: white;
+  @include border-radius($border-radius-lg);
+
+  @include media-breakpoint-up(sm) {
+    padding: ($jumbotron-padding * 2) $jumbotron-padding;
+  }
+}
+
+.jumbotron-hr {
+  border-top-color: darken($jumbotron-bg, 10%);
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  @include border-radius(0);
+}
