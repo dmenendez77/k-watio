@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+  <title>k-Watio</title> <!--PENDING:Add icon in web page tab-->
+<!-- Required meta tags always come first -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- Bootstrap CSS -->
+  <!--Bootstrap version 3.3.6 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"-->
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  
+  <!--<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'-->
+  <link rel="stylesheet" type="text/css" href="scss/bootstrap.css">
+<!--Font Awesome font & Icons-->    
+  <link rel="stylesheet" href="css/font-awesome.min.css">    
+    <style>
+  
+  </style>
+</head>
+<body class="search-pro">
+<!--Navbar-->      
+        <div class="navbar navbar-light navbar-fixed-top" role="navigation">
+          <div class="container">
+              <a class="navbar-brand" href="index.html"><img src=img/Logo_web.png alt="AAAAAAA" width="160"></a>
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+                &#9776;
+                </button>
+              <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">                
+                <ul class="nav navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#customer">Cliente <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#professional">Profesional</a>
+                  </li>           
+                  <li class="nav-item">
+                    <a class="nav-link" href="search-pro.html">Encuentra en tu ciudad</a>
+                  </li>
+                  </ul>    
+                <div class="nav-right nav navbar-nav">    
+                  <li class="nav-item">
+                    <a class="nav-link" href="#help">Ayuda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#login">Inicia sesión</a>
+                  </li>
+                  <button type="submit" class="btn btn-success navbar-btn"><a href="join.html"></a>Conviértete en profesional</button> 
+                  </div>
+              </div>
+          </div>
+        </div>
+    </header>     
+
+<!--Main container-->
+  <div class="container">
+    <div class="pro">
+      <div class="row">
+        <section id="filter-module" class="col-md-2">
+          <header class="module-header">
+            <ul class="list-inline pull-left">
+              <li class="active">
+                <div class="btn-group">
+                  <button class="btn btn-primary">Filter</button>
+                  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><i class="icon-ico_chevron_down_lg"></i></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+              </li>  
+            </ul>            
+          </header>
+        </section>
+
+        <section id="main-module" class="col-md-10">
+          <header class="module-header">
+            <ul class="list-inline pull-left"><!--UL not inline-->
+              <li>
+                <div class="btn-group btn-filter">
+                  <a href="#" class="btn">Fan Blades</a>
+                  <a href="#" class="btn btn-remove"><i class="fa fa-times" aria-hidden="true"></i></a>
+                </div>
+                <div class="btn-group btn-filter">
+                  <a href="#" class="btn">Repair</a>
+                  <a href="#" class="btn btn-remove"><i class="fa fa-times" aria-hidden="true"></i></a>
+                </div>
+              </li>
+            </ul>
+          </header>
+          <div class="result col-sm-12">
+            <h2>120 profesionales encontrados en Madrid</h2> 
+          </div>
+          <div class="search-form col-sm-12">
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="inputLocation">Pro Search</label>
+                <input type="text" class="form-control" id="searchInput" placeholder="electricista, fontanero..."> 
+            </div>
+              
+              <!-- Single buttons -->
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Madrid
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Madrid</a>
+                  <a class="dropdown-item" href="#">Las Rozas de Madrid</a>
+                  <a class="dropdown-item" href="#">Alcorcón</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Pozuelo</a>
+                </div>
+              </div>
+               <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  25 km
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">25 km</a>
+                  <a class="dropdown-item" href="#">50 km</a>
+                  <a class="dropdown-item" href="#">100 km</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">150 km</a>
+                </div>
+              </div>
+               <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Best Match
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Best Match</a>
+                  <a class="dropdown-item" href="#">Most Rating</a>
+                  <a class="dropdown-item" href="#">Most Recently</a>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success">Buscar</button>
+            </form>            
+              <hr>
+          </div>        
+          <div class="profiles col-sm-12">
+              <div class="row">
+                <ul class="discussion-list col-md-12" style="list-style-type:none"><!--Removing bullets point-->
+                  <li class="discussion-item">
+                    <div class="row">
+                      <div class="block col-md-4">
+                          <img src="img/person-thumbnail-a.png">
+                          <p class="user"><a href="#" class="name">Nico Tesla</a></p> 
+                          <div class="rating">
+                              <i class="fa fa-plug" aria-hidden="true"></i>
+                              <i class="fa fa-plug" aria-hidden="true"></i>
+                              <i class="fa fa-plug" aria-hidden="true"></i>
+                              <i class="fa fa-plug" aria-hidden="true"></i>
+                              <i class="fa fa-plug fa-inverse"></i>
+                              <small>26 Opiniones</small>
+                          </div>
+                           
+                          <h6>Madrid, Las Rozas de Madrid, Micenas 46</h6>
+                          </div>
+                        <div class="profile-overview col-md-8">
+                          <p class="body">Ben es un electricista con más de 20 años de experiencia en el sector. Ha trabajado tanto en proyectos de baja como de media tensión. Su especialidad son la domótica, electrónica de potencia, aire acondicionado, CCTV y comunicaciones.</p>  
+                                                        <div class="responses">
+                            <span><i class="fa fa-comments" aria-hidden="true"></i> Responses (4)</span>
+                          </div>
+                        </div>    
+                        </div>
+                  </li>
+                    <hr>
+                  <li class="discussion-item">
+                    <div class="row">
+                      <div class="block col-md-4">
+                          <img src="img/person-thumbnail-b.png">
+                          <p class="user"><a href="#" class="name">Tom Edison</a></p> 
+                          <div class="rating">
+                              <i class="fa fa-plug" aria-hidden="true"></i>
+                              <i class="fa fa-plug" aria-hidden="true"></i>
+                              <i class="fa fa-plug" aria-hidden="true"></i>
+                              <i class="fa fa-plug" aria-hidden="true"></i>
+                              <i class="fa fa-plug fa-inverse"></i>
+                              <small>12 Opiniones</small>
+                          </div>
+                           
+                          <h6>Madrid, Las Rozas de Madrid, Micenas 46</h6>
+                          </div>
+                        <div class="profile-overview col-md-8">
+                          <p class="body">Ben es un electricista con más de 20 años de experiencia en el sector. Ha trabajado tanto en proyectos de baja como de media tensión. Su especialidad son la domótica, electrónica de potencia, aire acondicionado, CCTV y comunicaciones.</p>  
+                                                        <div class="responses">
+                            <span><i class="fa fa-comments" aria-hidden="true"></i> Responses (4)</span>
+                          </div>
+                        </div>    
+                        </div>
+                  </li>            
+                    <hr>
+                  <li class="discussion-item">
+                    <div class="row">
+                      <div class="block col-md-4">
+                          <img src="img/person-thumbnail-c.png">
+                          <p class="user"><a href="#" class="name">Ben Franklin</a></p> 
+                          <div class="rating">
+                              <i class="fa fa-plug" aria-hidden="true"></i>
+                              <i class="fa fa-plug" aria-hidden="true"></i>
+                              <i class="fa fa-plug" aria-hidden="true"></i>
+                              <i class="fa fa-plug fa-inverse"></i>
+                              <i class="fa fa-plug fa-inverse"></i>
+                              <small>6 Opiniones</small>
+                          </div>
+                           
+                          <h6>Madrid, Las Rozas de Madrid, Micenas 46</h6>
+                          </div>
+                        <div class="profile-overview col-md-8">
+                          <p class="body">Ben es un electricista con más de 20 años de experiencia en el sector. Ha trabajado tanto en proyectos de baja como de media tensión. Su especialidad son la domótica, electrónica de potencia, aire acondicionado, CCTV y comunicaciones.</p>  
+                                                        <div class="responses">
+                            <span><i class="fa fa-comments" aria-hidden="true"></i> Responses (4)</span>
+                          </div>
+                        </div>    
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>    
+              </div>
+          </div>
+        </section>
+        
+      </div>
+    </div>  
+  </div>
+
+<!--Footer-->
+
+    <footer role="contentinfo">   
+            <div id="footer">  
+        <div class="container">
+            <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <ul>
+          <h4 class="">Cliente</h4>
+          <li><a href="#energy-use">Registrate</a></li>
+          <li><a href="#mobiles">Seguridad</a></li>
+          <li><a href="#architecture">¿Cómo funciona?</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <ul>
+          <h4 class="">Profesional</h4>
+          <li><a href="./enterprise/#unified-enterprise" track="unified enterprise footer">Entra</a></li>
+          <li><a href="./enterprise/#use-cases" track="use cases footer">Registrate</a></li>
+        </ul>
+      </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+        <ul>
+          <h4 class="">Acerca de</h4>
+          <li><a href="./news" track="news footer">Equipo</a></li>
+          <li><a href="mailto:info@.com" track="">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <ul>
+          <h4 class="">Ayuda</h4>
+          <li><a href="./partners" track="partners footer">Socios</a></li>
+          <li><a href="./documentation" track="documenation footer">Privacidad</a></li>
+          <li><a href="mailto:support@elasticbox.com" track="support footer">Condiciones</a></li>
+          <li><a href="./releases" target="blank" track="release notes footer">Cookies</a></li>
+        </ul>
+      </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">    
+                <ul class="social">
+                <h4 class="">Conecta</h4>
+                  <li><a href="http://twitter.com/kWatio_tech" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
+                  <li><a href="https://www.linkedin.com/pub/david-menendez/22/a99/a14" title="LinkedIn Profile"><span class="icon fa fa-linkedin"></span></a></li>
+                  <li><a href="#" title="GitHub Profile"><span class="icon fa fa-github-alt"></span></a></li>
+                </ul>
+            </div>
+            </div>
+                <div class="row copyright">
+                    <div class="footer-legal pull-right">&#169 k-Watio Tech. 2016. All rights reserved.</div>
+                </div>
+            </div><!-- /.container -->
+        </div>    
+    </footer>    
+
+<!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</body>
+</html>
