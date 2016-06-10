@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+  <title>k-Watio</title> <!--PENDING:Add icon in web page tab-->
+<!-- Required meta tags always come first -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- Bootstrap CSS -->
+  <!--Bootstrap version 3.3.6 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"-->
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  
+  <!--<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'-->
+  <link rel="stylesheet" type="text/css" href="scss/bootstrap.css">
+<!--Font Awesome font & Icons-->    
+  <link rel="stylesheet" href="css/font-awesome.min.css">    
+    <style>
+  
+  </style>
+</head>
+<body>
+	<header class="container">
+<!--Navbar-->      
+        <div class="navbar navbar-light navbar-fixed-top" role="navigation">
+          <div class="container">
+              <a class="navbar-brand" href="#"><img src=img/Logo_web.png alt="AAAAAAA" width="160"></a>
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+                &#9776;
+                </button>
+              <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">                
+                <ul class="nav navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#customer">Cliente <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#professional">Profesional</a>
+                  </li>           
+                  <li class="nav-item">
+                    <a class="nav-link" href="#location">Encuentra en tu ciudad</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#help">Ayuda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#login">Inicia sesión</a>
+                  </li>
+                  <button type="submit" class="btn btn-success navbar-btn"><a href="#"></a>Conviertete en profesional</button> 
+                  </ul>
+              </div>
+          </div>
+        </div>
+    </header>      
+
+<!--Main container-->
+<style type="text/css">
+  .fill-container {
+    padding-top: 60px;
+  }
+ .profile-banner {
+    background-image: url(img/ede-profile-banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-left: 20px;
+ }
+.rating {
+   unicode-bidi: bidi-override;
+   direction: rtl;
+    }
+.rating > span {
+   display: inline-block;
+   position: relative;
+   width: 1.1em;
+ }
+ .rating > span:hover:before,
+ .rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+  }
+  .label {
+    text-transform: capitalize;
+    border-radius: 40px;
+    background-color: #e9e9e9;
+    color: #575757;
+    padding: 8px 15px 7px 15px;
+    display: inline-block;
+  } 
+</style>
+
+<section class="fill-container full">
+          <div class="profile-banner">
+            <div class="row container banner-content">
+    
+              <div class="banner-lockup col-md-12">
+
+                <div class="row">
+
+                  <div class="col-md-5">
+                    <div class="inline-block">
+                      <img src="img/ede-profile-thumbnail.png">
+                    </div>
+                    <div class="inline-block">
+                      <h2>Jayeon Kim</h2>
+                      Mrs. Chispas, España<br>
+                      Las Rozas de Madrid, Madrid
+                      <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                         </div>
+                         <small>Reviewers 26</small>
+                      <p class="availability available"><i class="icon-availability"></i>Available</p>
+                    </div>
+                  </div>
+                
+                  <div class="col-md-7 clearfix">
+                    <div class="pull-right">
+                      <a href="#" class="btn last-btn" rel="tooltip" data-title="Share" data-placement="bottom" data-original-title="" title=""><i class="icon-ico_share_lg icon-black"></i></a>
+                    </div>
+                    <div class="btn-group pull-right">
+                      <a href="#" class="btn" rel="tooltip" data-title="Message" data-placement="bottom" data-original-title="" title=""><i class="icon-ico_mail_lg icon-black"></i></a>
+                      <a href="#" class="btn" rel="tooltip" data-title="WebEx" data-placement="bottom" data-original-title="" title=""><i class="icon-ico_webex icon-black"></i></a>
+                      <a href="#" class="btn" rel="tooltip" data-title="Mobile" data-placement="bottom" data-original-title="" title=""><i class="icon-ico_mobile icon-black"></i></a>
+                      <a href="#" class="btn" rel="tooltip" data-title="Phone" data-placement="bottom" data-original-title="" title=""><i class="icon-ico_phone_sm icon-black"></i></a>                      
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              
+            </div><!-- end header row -->
+          </div>
+        </section>
+
+      </header>
+
+<!--Navigation profile bar-->
+      <div class="container">
+          <section class="navigation-profile">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active"  style="background-color:inherit;color:#727880;border-bottom: 0.2px solid darkgreen" href="#">Resumen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Experiencia & Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Educación & Formación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Asociaciones & Certificados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Comentarios</a>
+              </li>
+            </ul>            
+          </section> 
+      </div><!--End of navigation profile bar-->
+<!--Main content-->
+        <div class="container">  
+
+               <section class="col-md-9">
+            <div class="row">
+              <section class="col-md-12">
+                <div id="summary" class="block">
+                  <h3 class="reset-top-margin">Summary</h3>
+
+                  <div class="row">
+                    
+                    <textarea class="ede-textarea-float col-md-7" rows="8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    </textarea>
+
+                    <div class="col-md-4 help-block">
+                      Guidance on writing lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, fugiat nulla.
+                    </div>
+                            
+                  </div><!-- end edit summary row -->
+                  
+                  <br>
+                  
+                  <div class="row">
+                    <div class="col-md-4">
+                      <button class="btn" href="#">Cancel</button>
+                      <button class="btn btn-primary" href="#">Save</button>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="clearfix reset-top-margin settings-margin-left">
+
+                      <div class="form-group">
+                        <label for="blogLinkInput">Blog Link</label>
+                        <input type="text" class="blog-link form-control" id="blogLinkInput" value="http://www.gereports.com/author/stewart-smith" style="width: 575px;">
+                      </div>
+               
+                    </div>
+
+
+                  </div>
+
+                  <hr><!-- subsection divider -->
+
+
+                  <div class="row">
+
+                    <div id="skillsExpertise" class="clearfix reset-top-margin settings-margin-left">
+
+                      <h3>Skills &amp; Expertise <button class="btn pull-right inline ede-edit"><i class="icon-ico_edit_sm"></i> Edit</button></h3>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <span class="label tag">Agile Development</span>
+                          <span class="label tag">Product Development</span>
+                          <span class="label tag">Executive Management</span>
+                          <span class="label tag">Adipiscing Consecteur</span>
+                          <span class="label tag">Dolor</span>
+                          <span class="label tag">Lorem Ipsum</span>
+                          <span class="label tag">Dolor</span>
+                          <span class="label tag">Sit Amet</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> 
+
+                  <hr><!-- subsection divider -->
+
+                  <div class="row">
+
+                    <h3 class="settings-margin-left">Current Assignment<button class="btn pull-right inline ede-edit"><i class="icon-ico_edit_sm"></i> Edit</button></h3>
+
+                    <div id="currentAssignment" class="col-md-4">
+                      
+                      <!-- sorry about the table layout, only way to create the lockup - MD -->
+                      <table class="table table-unstyled">
+                        <tbody>
+                          <tr>
+                            <td><strong>Business</strong></td>
+                            <td>GE Capital</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Business Segment</strong></td>
+                            <td>GE Capital - Staff</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Sub Business</strong></td>
+                            <td>GE Capital Americas</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Organization</strong></td>
+                            <td>AMSTC GEC HQ Strategic Initiative</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Function</strong></td>
+                            <td>Information Technology</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Title</strong></td>
+                            <td>Program Manager</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><!-- end internal table row -->
+
+                </div>
+              </section>
+            </div><!-- end row 1 summary -->
+            <div class="row">
+              <section class="col-md-12">
+                <div id="contactInfo" class="block">
+                  <h3 class="reset-top-margin">Contact Information</h3>
+                  <div class="row">
+                    <div class="col-md-5 reset-bottom-margin">
+                      <h4 id="workContact" class="reset-top-margin">Work</h4>
+                     
+                      <div class="form-group">
+                        <label>Address 1</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="1 Village Center Drive">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Address 2</label>
+                        <input type="text" class="form-control" style="width: 315px;">
+                      </div>
+
+                      <div class="form-group">
+                        <label>City</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="Van Buren Township">
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>State</label>
+                            <input type="text" class="form-control" style="width: 75px;" placeholder="MI">
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label>Zip</label>
+                            <input type="text" class="form-control" style="width: 200px;" placeholder="48111-5711">
+                          </div>
+                        </div>
+                      </div>
+                        
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="stewart.smith@ge.com">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Office Phone</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="+1 212 727 3112">
+                      </div>
+                      
+                      <div class="form-group">
+                        <label>Mobile Phone</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="+1 917 555 1234">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Dialcom</label>
+                        <input type="text" class="form-control" style="width: 315px;">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Fax</label>
+                        <input type="text" class="form-control" style="width: 315px;" placeholder="+1 212 555 4312">
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6 reset-bottom-margin">
+                          <button class="btn" href="#">Cancel</button>
+                          <button class="btn btn-primary" href="#">Save</button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div><!-- end contact work row -->
+
+                </div>
+              </section>
+            </div><!-- end row 2 contact info -->
+
+            <div class="row">
+
+              
+              <section class="col-md-12">
+
+                <div class="block ie-margin-left">
+
+                  <div id="experience">
+                    <div class="row">
+                      <div class="clearfix">
+                        <button type="submit" class="btn pull-right ede-edit"><i class="icon-ico_edit_sm"></i> Edit</button>
+                        <h3 class="reset-top-margin settings-margin-left">Experience</h3>
+                      </div>
+                    </div>
+                    
+
+                    <h4 class="reset-bottom-margin">Human Resources Director</h4>
+                    GE Capital<br>
+                    Stamford, CT USA<br>
+                    <span class="timestamp">November 2011 - Present (2 years 1 month)</span>
+
+                    <h4 class="reset-bottom-margin">Organization &amp; Staffing Manager</h4>
+                    GE Corporate<br>
+                    Fairfield, CT USA<br>
+                    <span class="timestamp">November 2010 - November 2011 (1 year)</span>
+
+                    <h4 class="reset-bottom-margin">Human Resources Leadership Program (HRLP)</h4>
+                    GE Corporate<br>
+                    Fairfield, CT USA<br>
+                    <span class="timestamp">September 2008 - November 2010 (2 years 2 months)</span>
+
+                    <h4 class="reset-bottom-margin">Compensation Manager</h4>
+                    ABC Company<br>
+                    San Francisco, CA USA<br>
+                    <span class="timestamp">September 2000 - September 2008 (8 years)</span>
+
+                  </div>
+        
+              
+                  <hr class="header-div-subsection"><!-- subsection divider -->
+                
+                  
+                  <div id="education">
+                    <div class="row">
+                      <div class="clearfix">
+                        <button type="submit" class="btn pull-right ede-edit"><i class="icon-ico_edit_sm"></i> Edit</button>
+                        <h3 class="reset-top-margin settings-margin-left">Education &amp; Training</h3>
+                      </div>
+                    </div>
+
+                    <h4 class="reset-bottom-margin">Lorem Ipsum University</h4>
+                    MBA, Human &amp; Organizational Performance<br>
+                    <span class="timestamp">1998-2000</span>
+
+                    <h4 class="reset-bottom-margin">Dolor University</h4>
+                    BS, Accounting<br>
+                    <span class="timestamp">1994-1998</span>
+
+                  </div>
+                 
+    
+                </div>
+                </section>
+     
+
+            </div><!-- end qualifications  -->
+
+            <div class="row">
+              <section class="col-md-12">
+                <div id="networkAffiliations" class="block ie-margin-left">
+                  <div class="row">
+                    <div class="clearfix">
+                      <button type="submit" class="btn pull-right ede-edit"><i class="icon-ico_edit_sm"></i> Edit</button>
+                      <h3 class="reset-top-margin settings-margin-left">Networks &amp; Affiliations</h3>
+                    </div>
+                  </div>
+                  <a href="#"><strong>Veteran's Network (GEVN)</strong></a><br>
+                  <a href="#"><strong>Women's Network (GEWN)</strong></a>
+                </div>
+
+              </section>
+            </div><!-- end row 6 network and affiliations -->
+
+            
+
+
+
+            
+
+          </section>
+        </div><!-- end row container -->
+      </div><!-- end content container -->
+
+
+      <div class="backtop"><i class="icon-ico_arrowup_lg"></i></div>  
+
+<!--Footer-->
+
+        <footer role="contentinfo">   
+            <div id="footer">  
+        <div class="container">
+            <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <ul>
+          <h4 class="">Solutions</h4>
+          <li><a href="#energy-use">Energy Awareness</a></li>
+          <li><a href="#mobiles">Monitoring</a></li>
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="#architecture">How it works?</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <ul>
+          <h4 class="">Dashboard</h4>
+          <li><a href="./enterprise/#unified-enterprise" track="unified enterprise footer">Sign In</a></li>
+          <li><a href="./enterprise/#use-cases" track="use cases footer">Register</a></li>
+          <li><a href="./enterprise/#access-control" track="access control footer">Use Cases</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <ul>
+          <h4 class="">Resources</h4>
+          <li><a href="./partners" track="partners footer">Partners</a></li>
+          <li><a href="./documentation" track="documenation footer">Privacy</a></li>
+          <li><a href="mailto:support@elasticbox.com" track="support footer">Terms of Sevice</a></li>
+          <li><a href="./releases" target="blank" track="release notes footer">Cookies</a></li>
+        </ul>
+      </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+        <ul>
+          <h4 class="">About Us</h4>
+          <li><a href="./news" track="news footer">Team</a></li>
+          <li><a href="./about" track="about footer">Our Location</a></li>
+          <li><a href="mailto:info@.com" track="">Contact</a></li>
+        </ul>
+      </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">    
+                <ul class="social">
+                <h4 class="">Connect</h4>
+                  <li><a href="http://twitter.com/kWatio_tech" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
+                  <li><a href="https://www.linkedin.com/pub/david-menendez/22/a99/a14" title="LinkedIn Profile"><span class="icon fa fa-linkedin"></span></a></li>
+                  <li><a href="#" title="GitHub Profile"><span class="icon fa fa-github-alt"></span></a></li>
+                </ul>
+            </div>
+            </div>
+                <div class="row copyright">
+                    <div class="footer-legal pull-right">&#169 k-Watio Tech. 2014. All rights reserved.</div>
+                </div>
+            </div><!-- /.container -->
+        </div>    
+        </footer>
+
+<!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</body>
+</html>
