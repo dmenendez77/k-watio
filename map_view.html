@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+  <title>k-Watio</title> <!--PENDING:Add icon in web page tab-->
+<!-- Required meta tags always come first -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- Bootstrap CSS -->
+  <!--Bootstrap version 3.3.6 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"-->
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  
+  <!--<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'-->
+  <link rel="stylesheet" type="text/css" href="scss/bootstrap.css">
+<!--Font Awesome font & Icons-->    
+  <link rel="stylesheet" href="css/font-awesome.min.css"> 
+ <!--LoadGoogle maps API-->
+        
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>  
+<!--Popover has to be initialized-->    
+<script>
+$(function () {
+  $('#pop').popover()
+  $('[data-toggle="tooltip"]').show()
+})
+</script>  
+  <script>$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  
+})</script>  
+
+    
+</head>
+    
+<body>
+	<header class="container">
+<!--Navbar-->      
+        <div class="navbar navbar-light navbar-fixed-top" role="navigation">
+          <div class="container">
+              <a class="navbar-brand" href="#"><img src=img/Logo_web.png alt="AAAAAAA" width="160"></a>
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+                &#9776;
+                </button>
+              <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">                
+                <ul class="nav navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#customer">Cliente <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#professional">Profesional</a>
+                  </li>           
+                  <li class="nav-item">
+                    <a class="nav-link" href="search-pro.html">Encuentra en tu ciudad</a>
+                  </li>
+                  </ul>    
+                <div class="nav-right nav navbar-nav">    
+                  <li class="nav-item">
+                    <a class="nav-link" href="#help">Ayuda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#login" data-toggle="modal" data-target="#login">Inicia sesión</a>
+                  </li>
+                  <button type="submit" class="btn btn-success navbar-btn" ><a href="join.html"></a>Conviértete en profesional</button> 
+                  </div>
+              </div>
+          </div>
+        </div>
+    </header>  
+
+
+<!--Jumbotron-->        
+        <section class="jumbotron">
+            <div id="welcome" class="container-fluid">
+                <div class="container col-md-4 col-md-offset-8">
+                    <div class="welcome-message">
+                        <h3>Encuentra a un profesional con <b>k-Watio</b></h3>
+                            <p><br>Registrate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+                  <div class="container">
+        <div class="col-md-4">
+                <button id="pop" type="button" class="btn btn-lg btn-danger" data-container="body" data-toggle="popover" data-placement="right" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button><!--Popover: REVIEW-->
+            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on top">
+  Tooltip on top
+</button>
+        </div>
+    </div> 
+<!--Module 6-->
+    <div class="container">
+            <div class="module6 container">  
+                <h2 class="featurette-heading">k-Watio esta en Madrid.
+                    <span class="text-muted">y en xxx ci</span>
+                </h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                         <form class="navbar-search pull-left">
+                        <div class="input-group">
+                            <input id="map-input" type="search" class="form-control" data-target=".navbar-search" placeholder="Buscar"><!--CHECK IF THIS IS WORKING-->
+                              <span class="input-group-btn">
+                                <button id="map-button" class="btn btn-success" type="button">
+                                    <i class="fa fa-search" aria-hidden="true" ></i>  
+                                </button>
+                              </span>
+                           
+                        </div>
+                        </form>
+                    </div>
+                </div>                                    
+            </div> 
+            <div id="map-container">
+            </div>
+        </div>
+
+     
+    <!--Footer-->
+        <footer role="contentinfo">   
+            <div id="footer">  
+        <div class="container">
+            <div class="row">
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <ul>
+          <h4 class="">Cliente</h4>
+          <li><a href="#energy-use">Registrate</a></li>
+          <li><a href="#mobiles">Seguridad</a></li>
+          <li><a href="#architecture">¿Cómo funciona?</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <ul>
+          <h4 class="">Profesional</h4>
+          <li><a href="./enterprise/#unified-enterprise" track="unified enterprise footer">Entra</a></li>
+          <li><a href="./enterprise/#use-cases" track="use cases footer">Registrate</a></li>
+        </ul>
+      </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-xs-6">
+        <ul>
+          <h4 class="">Acerca de</h4>
+          <li><a href="./news" track="news footer">Equipo</a></li>
+          <li><a href="mailto:info@.com" track="">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <ul>
+          <h4 class="">Ayuda</h4>
+          <li><a href="./partners" track="partners footer">Socios</a></li>
+          <li><a href="./documentation" track="documenation footer">Privacidad</a></li>
+          <li><a href="mailto:info@kwatio.com" track="support footer">Condiciones</a></li>
+          <li><a href="./releases" target="blank" track="release notes footer">Cookies</a></li>
+        </ul>
+      </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">    
+                <ul class="social">
+                <h4 class="">Conecta</h4>
+                  <li><a href="http://twitter.com/kWatio_tech" title="Twitter Profile"><span class="icon fa fa-twitter"></span></a></li>
+                  <li><a href="https://www.linkedin.com/pub/david-menendez/22/a99/a14" title="LinkedIn Profile"><span class="icon fa fa-linkedin"></span></a></li>
+                  <li><a href="#" title="GitHub Profile"><span class="icon fa fa-github-alt"></span></a></li>
+                </ul>
+            </div>
+            </div>
+                <div class="row copyright">
+                    <div class="footer-legal pull-right">&#169 k-Watio Tech. 2016. All rights reserved.</div>
+                </div>
+            </div><!-- /.container -->
+        </div>    
+        </footer>
+
+    <script>
+// This example adds a search box to a map, using the Google Place Autocomplete
+// feature. People can enter geographical searches. The search box will return a
+// pick list containing a mix of places and predicted search terms.
+
+function initAutocomplete() {
+  var map = new google.maps.Map(document.getElementById('map-container'), {
+    center: {lat: -33.8688, lng: 151.2195},
+    zoom: 13,
+    mapTypeControl: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  });
+    //document.getElementById("map-button").onclick = function(){
+      //  var places = searchBox.getPlaces();
+    //}
+
+  // Create the search box and link it to the UI element.
+  var input = document.getElementById('map-input');
+  var searchBox = new google.maps.places.SearchBox(input);
+  map.controls[google.maps.ControlPosition.TOP_BOTTOM].push(input);
+
+  // Bias the SearchBox results towards current map's viewport.
+  map.addListener('bounds_changed', function() {
+    searchBox.setBounds(map.getBounds());
+  });
+
+  var markers = [];
+  // Listen for the event fired when the user selects a prediction and retrieve
+  // more details for that place.
+  searchBox.addListener('places_changed', function() {
+    var places = searchBox.getPlaces();
+
+    if (places.length == 0) {
+      return;
+    }
+
+    // Clear out the old markers.
+    markers.forEach(function(marker) {
+      marker.setMap(null);
+    });
+    markers = [];
+
+    // For each place, get the icon, name and location.
+    var bounds = new google.maps.LatLngBounds();
+    places.forEach(function(place) {
+      var icon = {
+        url: place.icon,
+        size: new google.maps.Size(71, 71),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(17, 34),
+        scaledSize: new google.maps.Size(25, 25)
+      };
+
+      // Create a marker for each place.
+      markers.push(new google.maps.Marker({
+        map: map,
+        icon: icon,
+        title: place.name,
+        position: place.geometry.location
+      }));
+
+      if (place.geometry.viewport) {
+        // Only geocodes have viewport.
+        bounds.union(place.geometry.viewport);
+      } else {
+        bounds.extend(place.geometry.location);
+      }
+    });
+    map.fitBounds(bounds);
+  });
+    // [END region_getplaces]
+    // [END region_getplaces]
+//See how it works in http://jsfiddle.net/upsidown/1svw299r/
+    // Bias the SearchBox results towards places that are within the bounds of the
+    // current map's viewport.
+    google.maps.event.addListener(map, 'bounds_changed', function () {
+        var bounds = map.getBounds();
+        searchBox.setBounds(bounds);
+    });
+
+    // Trigger search on button click
+    document.getElementById('trigger-search').onclick = function () {
+
+        var input = document.getElementById('pac-input');
+
+        google.maps.event.trigger(input, 'focus')
+        google.maps.event.trigger(input, 'keydown', {
+            keyCode: 13
+        });
+    };
+}
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsIOUB03sEDjArodiJbRbdlxvwIDM_qHY&libraries=places&callback=initAutocomplete"
+         async defer></script>
+
+
+<!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    
+</body>
+</html>
